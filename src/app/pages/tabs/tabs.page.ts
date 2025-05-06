@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { IonTab, IonTabBar, IonTabs } from '@ionic/angular/standalone';
+import {
+  IonIcon,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+} from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { chatbubbleOutline, homeOutline, personOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
   standalone: true,
-  imports: [IonTabBar, IonTab, IonTabs],
+  imports: [IonIcon, IonTabButton, IonTabBar, IonTabs],
 })
 export class TabsPage implements OnInit {
-  constructor() {}
+  constructor() {
+    addIcons({ homeOutline, chatbubbleOutline, personOutline });
+  }
 
   ngOnInit() {}
 }
