@@ -1,0 +1,7 @@
+{
+  "name": "car-selling-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
