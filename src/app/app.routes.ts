@@ -15,4 +15,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/tabs/tabs.page').then((m) => m.TabsPage),
   },
+  {
+    path: 'search',
+    loadComponent: () => import('./pages/tabs/search/search.page').then( m => m.SearchPage)
+  },
+  {
+    path: 'add-post',
+    loadComponent: () => import('./pages/tabs/add-post/add-post.page').then( m => m.AddPostPage)
+  },
 ];
