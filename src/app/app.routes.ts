@@ -23,4 +23,8 @@ export const routes: Routes = [
     path: 'add-post',
     loadComponent: () => import('./pages/tabs/add-post/add-post.page').then( m => m.AddPostPage)
   },
+  {
+    path: 'profile',
+    loadComponent: () => import('./pages/tabs/profile/profile.page').then( m => m.ProfilePage)
+  },
 ];

@@ -1,12 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {
   IonIcon,
+  IonLabel,
   IonTabBar,
   IonTabButton,
   IonTabs,
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { chatbubbleOutline, homeOutline, personOutline } from 'ionicons/icons';
+import {
+  addOutline,
+  chatbubbleOutline,
+  homeOutline,
+  personOutline,
+  search,
+  searchOutline,
+} from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs',
@@ -17,7 +25,13 @@ import { chatbubbleOutline, homeOutline, personOutline } from 'ionicons/icons';
 })
 export class TabsPage implements OnInit {
   constructor() {
-    addIcons({ homeOutline, chatbubbleOutline, personOutline });
+    addIcons({
+      homeOutline,
+      searchOutline,
+      addOutline,
+      personOutline,
+      chatbubbleOutline,
+    });
   }
 
   ngOnInit() {}
