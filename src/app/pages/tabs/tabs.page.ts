@@ -12,7 +12,6 @@ import {
   chatbubbleOutline,
   homeOutline,
   personOutline,
-  search,
   searchOutline,
 } from 'ionicons/icons';
 
