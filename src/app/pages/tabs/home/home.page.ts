@@ -7,12 +7,19 @@ import {
   IonContent,
   IonHeader,
   IonIcon,
+  IonInput,
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 
-import { menuOutline, personOutline } from 'ionicons/icons';
+import {
+  add,
+  menuOutline,
+  paperPlaneOutline,
+  personOutline,
+  searchOutline,
+} from 'ionicons/icons';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +27,7 @@ import { menuOutline, personOutline } from 'ionicons/icons';
   styleUrls: ['./home.page.scss'],
   standalone: true,
   imports: [
+    IonInput,
     IonIcon,
     IonButton,
     IonButtons,
@@ -33,7 +41,13 @@ import { menuOutline, personOutline } from 'ionicons/icons';
 })
 export class HomePage implements OnInit {
   constructor() {
-    addIcons({ menuOutline, personOutline });
+    addIcons({
+      menuOutline,
+      personOutline,
+      searchOutline,
+      paperPlaneOutline,
+      add,
+    });
   }
 
   ngOnInit() {}
